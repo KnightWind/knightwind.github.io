@@ -1,0 +1,58 @@
+
+<LinearLayout 
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/input_single"
+	    android:orientation="vertical"
+	    android:padding="0dp"
+	    >
+	    
+	    <TextView
+	        android:layout_width="match_parent"
+    		android:layout_height="@dimen/title_height"
+    		android:background="@drawable/app_title_bg"
+    		android:gravity="center"
+    		android:textSize="30sp"
+    		android:text="@string/title_name_of_activity"
+        />
+	    <TextView
+	        android:layout_width="match_parent"
+    		android:layout_height="@dimen/title_height"
+    		android:gravity="center"
+    		android:text="@string/rename_input_newName"
+        />
+	    
+	    <EditText
+	        android:inputType="text"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:id="@+id/party_rename_et1"
+	        android:layout_width="match_parent"
+    		android:layout_height="@dimen/title_height"
+    		android:singleLine="true"
+	        />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:orientation="horizontal"
+	        >
+	        <Button
+	            android:id="@+id/party_rename_bt1"
+	            android:layout_width="match_parent"
+	        	android:layout_height="match_parent"
+	        	android:layout_weight="1"
+	        	android:text="@string/cancel"
+	            />
+	        <Button
+	            android:id="@+id/party_rename_bt2"
+	            android:layout_width="match_parent"
+	        	android:layout_height="match_parent"
+	        	android:layout_weight="1"
+	        	android:text="@string/ok"
+	            />
+	    </LinearLayout>
+	    
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sktlab="http://schemas.android.com/apk/res/com.sktlab.bizconfmobile"
+    style="@style/LayoutBase.Vertical.Content" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            style="@style/LayoutBase.Vertical.Content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/etv_conf_title"
+                layout="@layout/edit_text_with_tv" />
+
+            <TextView style="@style/SperatorGap" />
+
+            <include
+                android:id="@+id/etv_conf_time"
+                layout="@layout/edit_text_with_tv" >
+            </include>
+
+            <LinearLayout
+                style="@style/LayoutBase.SingleMoudle"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TextBoxBase.LeftLabel"
+                    android:background="@android:color/transparent"
+                    android:text="@string/toast_order_conf_time" />
+
+                <include
+                    android:id="@+id/layout_time_selector"
+                    layout="@layout/item_time_selector" >
+                </include>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutBase.Vertical"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_single_input" >
+
+                <com.sktlab.bizconfmobile.customview.TextArrow
+                    android:id="@+id/conf_period_arrow"
+                    style="@style/TextArrowBase.InGroup"
+                    sktlab:centerLabelText="@string/noRepeat"
+                    sktlab:leftLabelText="@string/toast_order_conf_period"
+                    sktlab:rightImgSrc="@drawable/disclosure_arrow" >
+                </com.sktlab.bizconfmobile.customview.TextArrow>
+
+                <include
+                    android:id="@+id/layout_repeat_count"
+                    layout="@layout/item_repeat_count" >
+                </include>
+            </LinearLayout>
+
+<!--             <com.sktlab.bizconfmobile.customview.TextArrow
+                android:id="@+id/access_number_arrow"
+                style="@style/TextArrowBase.Single"
+                sktlab:background="@drawable/layout_text_arrow_single_states"
+                sktlab:centerLabelText="@string/none"
+                sktlab:leftLabelText="@string/access_number"
+                sktlab:rightImgSrc="@drawable/disclosure_arrow" >
+            </com.sktlab.bizconfmobile.customview.TextArrow>
+
+            <com.sktlab.bizconfmobile.customview.SlipControlView
+                android:id="@+id/security_module"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                sktlab:inputModuleBg="@drawable/input_bottom"
+                sktlab:isSlipOn="false"
+                sktlab:tmBgImHide="@drawable/input_single"
+                sktlab:tmBgImShow="@drawable/input_top"
+                sktlab:toastStr="@string/conf_security_code" >
+            </com.sktlab.bizconfmobile.customview.SlipControlView> -->
+
+            <EditText
+                android:id="@+id/et_meeting_note"
+                style="@style/TextBoxBase.SingleTexBox.SingleEditText.MultiInput"
+                android:scrollbars="vertical"
+                android:hint="@string/toast_order_conf_body_content" />
+
+            <LinearLayout
+                style="@style/LayoutBase.Vertical"
+                android:background="@drawable/app_single_input" >
+
+                <com.sktlab.bizconfmobile.customview.TextArrow
+                    android:id="@+id/invite_party_module"
+                    style="@style/TextArrowBase.InGroup"
+                    android:layout_marginBottom="0dp"
+                    sktlab:centerLabelText="@string/none"
+                    sktlab:leftLabelText="@string/toast_order_conf_invite_party"
+                    sktlab:rightImgSrc="@drawable/disclosure_arrow" >
+                </com.sktlab.bizconfmobile.customview.TextArrow>
+				
+                <TextView  
+                    android:id="@+id/sperator_line"
+                    style="@style/SperatorLine"
+                    android:visibility="gone"/>
+                
+                <LinearLayout            
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_selected_parties_module" 
+                    android:background="@android:color/transparent"                  
+                    android:layout_marginRight="0dp"
+                    android:visibility="gone">
+                </LinearLayout>          
+            </LinearLayout>
+            
+             <TextView style="@style/SperatorGap"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

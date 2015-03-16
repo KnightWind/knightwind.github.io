@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutBase.Vertical.Content" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_layout" />
+
+    <TextView
+        android:id="@+id/tv_version_statement"
+        style="@style/TextBoxBase"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="left"
+        android:lines="100"
+        android:text="@string/title_name_of_activity" />
+
+</LinearLayout>

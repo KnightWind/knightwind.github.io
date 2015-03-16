@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView style="@style/CalendarTitleWeek" 
+        android:text="@string/week_1"/>
+
+    <TextView style="@style/CalendarTitleWeek" 
+        android:text="@string/week_2"/>
+
+    <TextView style="@style/CalendarTitleWeek" 
+        android:text="@string/week_3"/>
+
+    <TextView style="@style/CalendarTitleWeek" 
+        android:text="@string/week_4"/>
+
+    <TextView style="@style/CalendarTitleWeek" 
+        android:text="@string/week_5"/>
+
+    <TextView style="@style/CalendarTitleWeek" 
+        android:text="@string/week_6"/>
+
+    <TextView style="@style/CalendarTitleWeek" 
+        android:text="@string/week_7"/>
+
+</LinearLayout>

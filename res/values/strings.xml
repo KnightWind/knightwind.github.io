@@ -1,0 +1,440 @@
+<resources>
+
+    <string name="app_name">BizConf Mobile</string>
+    <string name="title_name_of_activity">BizConf Mobile</string>
+    <string name="menu_settings">Setting</string>
+    <string name="none"></string>
+    
+	<!-- home page -->
+    <string name="main_tab_home">Home</string>
+    <string name="main_tab_calendar">Calendar</string>
+    <string name="main_tab_history">History</string>
+    <string name="main_tab_service">Service</string>
+    <string name="main_tab_setting">Setting</string>
+    
+    <!-- function button  text-->
+    <string name="start_conf">Start</string>
+    <string name="order_conf">Schedule</string>
+    <string name="join_conf">Join</string>
+	
+    <string name="toast_in_button_join">Join</string>
+     <!-- 确认和取消 -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="pass">Skip</string>
+    
+    <string name="confirm_exit">Exit？</string>
+    <string name="confirm_exit_and_end_conf">You are in conference now,are you sure to exit and end conference？</string>
+        
+    <string name="add_conf">Add Conference Account</string>
+    
+    <string name="user_moderator_name">Moderator</string>
+    
+    <string name="user_guest_name">Me</string>
+    
+    <!-- 会议名称 -->
+    <string name="account_name">Account Name</string>
+    <!-- 接入号码 -->
+    <string name="access_number">Access Number</string>
+    <string name="conf_code">Conference Code</string>
+    <string name="moderator_pw">Leader Pin</string>
+    <string name="allow_to_outside_call_guest">Call Me</string>
+    <string name="allow_to_outside_call">Call Me</string>
+    <string name="conf_security_code">Security Code</string>
+    
+    <string name="input_number">Please enter your phone number</string>
+    <string name="being_authenticated">In Progress Verifying &#8230;</string>
+    <string name="edit">Edit</string>
+    <string name="back">Back</string>
+    <string name="del">Delete</string>
+    <string name="begin_conf">Start</string>
+    <string name="connecting">Connecting Conference &#8230;</string>
+    <string name="wifi_toast">Please open network access to be called and use conference security code!</string>
+    <string name="waiting_toast">Please wait for being called to join the conference</string>
+    
+    <string name="connecting_service">Connecting To Helpdesk</string>
+    <string name="connected_service">Connected To Helpdesk</string>
+    
+    <string name="promopt_to_verify_phone">Please enter your phone number to download leader conference account</string>    
+    
+    <string name="toast_request_bridge_time_out">Failed to load access numbers, please check your network</string>
+    
+    <string name="toast_error_conf_code">Failed to load access numbers, please check your conference number</string>
+    
+    <string name="toast_load_access_num_failed">Failed to load access numbers, please check the network and the conference number is valid or retry</string>
+    
+    <string name="toast_loading_access_number">Loading access number,please wait&#8230;</string>
+    
+    <string name="toast_conf_code_changed">Your conference code had been modified, please re-select or input the access number</string>
+    
+    <string name="toast_manual_input_access_num">Network is unavailable,please input the access number manually</string>
+    
+    <string name="toast_version_update_feature">New version avaiable, choose whether to update</string>
+    
+    <string name="toast_latest_version_title">Bizconf Mobile</string>
+    
+    <string name="toast_latest_version_time">Update time: %1$s</string>
+    
+    <string name="toast_is_latest_version">Your have the latest version</string>
+    
+    <string name="toast_connect_to_check_update">Connecting the server to check for updates,please wait &#8230;</string>
+    
+    <string name="toast_long_click_enter_conf">Please long press the account to re-enter the conference!</string>
+        
+    <string name="toast_not_enter_conference">You are in conference now, can not enter this conference!</string>
+    
+    <string name="toast_not_edit_account">You are in conference using this account, can not edit it!</string>
+        
+    <string name="toast_not_del_account">You are in conference using this account, can not delete it!</string>
+    
+    <string name="toast_join_other_conference">Join  %s Conference</string>
+    
+    <string name="toast_storage_access_denied">Access to storage be denied, please check.</string>
+    
+    <string name="toast_no_email_client">Sending email failed, please check email client!</string>
+    
+    <string name="toast_party_service_disenable">please switch to the phone keypad to use 00</string>
+    
+    <string name="toast_memory_recycled">Memory recycled by system, App will restart,if you are joining conference, please reentry it!</string>
+    
+    <string name="toast_manual_hang_up_original">Please manually hung up transferred number</string>
+    
+    <string name="toast_self_mute_disenable">Please switch to the phone keypad to use*6</string>
+        
+    <string name="toast_download_account_failed">Download account failed, please add account manually.</string>
+    
+    <string name="toast_start_time_less_than_now">Start time can not be less than now</string>
+    
+    <string name="toast_end_time_less_than_start">The end time required 5 minutes later than the start time</string>
+    
+    <string name="toast_del_no_schedule_account" formatted="false">Delete Account: %s ？</string>
+     
+    <string name="toast_del_event_time_out">Delete event time out, try again!</string>
+    
+    <string name="toast_being_delete_order_meeting">Deleting schedule meetings &#8230;</string>
+        
+    <string name="toast_del_account_msg">The current account contains schedule meetings, delete the account will delete all meetings associate with it.</string>
+    
+    <string name="toast_start_conf_msg" formatted="false">Start conference with account: %s？</string>
+        
+    <string name="toast_verify_code_error">Check Code Error</string>
+    
+    <string name="toast_connecting_start_conf">Connecting your conference, Please wait &#8230;</string>
+     
+    <string name="toast_start_conf_failed">Failed to start conference, Please check your network access or conference account or try again </string>
+        
+    <string name="add_normal_conf">Quick Add Participant Meeting#</string>
+    <string name="add_moderator_account">Quick Add Host Meeting No.</string>
+    <string name="apply_for_account">Contact customer service to apply for account</string>
+      <!-- 日历界面会议提示语 -->
+    <string name="no_conf">No Conference History</string>
+    
+    <string name="toast_no_bind_account">No Binding Account</string>
+    
+    <string name="downloading_moderator_account">Downloading Leader Conference Account &#8230;</string>
+    <string name="toast_phone_num_null">Phone Number Is Required</string>
+    <string name="toast_phone_num_invalid">Invalid Mobile Phone Number</string>
+    <string name="toast_email_address_invalid">Invalid Email Address</string>
+    <string name="toast_phone_num_verify">Verifying Mobile Phone Number Failed </string>
+    <string name="toast_check_code">Verifying, Please Wait &#8230;</string>
+    <string name="toast_input_verify_code">Please enter your verification code</string>
+    
+    <string name="toast_input_verify">Please input valid phone number or email address</string>
+    
+    <string name="toast_security_code_null">Conference Security Code Is Required</string>
+    <string name="toast_security_code_invalid">Invalid Conference Security Code</string>
+    <string name="toast_security_code_verify">Verifying Conference Security Code Failed </string>
+    
+    <string name="toast_security_4_number">Conference Code Should Be 4 Numbers</string>
+    
+    <string name="toast_conf_code_num_error" formatted="false">The number of %s should be 2 ~ 18</string>
+    
+    <string name="toast_account_name_null">Account Name Is Required</string>
+    <string name="toast_dial_in_num_null">Access Number Is Required</string>
+    <string name="toast_conf_code_null">Conference Code Is Required</string>
+    <string name="toast_moderator_pw_null">Leader Pin Is Required </string>
+    
+    <string name="toast_request_verify_dial_out_num">Please check your dial out number</string>
+    <string name="toast_request_verify_security_code">Please check your conference security code</string>
+	
+    <string name="toast_order_conf_title">Title</string>
+    <string name="toast_order_conf_date">Date</string>
+    <string name="toast_order_conf_time">Time</string>
+    <string name="toast_order_conf_from">From</string>
+    <string name="toast_order_conf_to">To</string>
+    <string name="toast_order_conf_period">Conference Period</string>
+    <string name="toast_order_conf_count">Conference Times</string> 
+    <string name="toast_order_conf_body_content">Main Body Content</string>
+    <string name="toast_order_conf_invite_party">Invite Participant</string>
+    <string name="toast_top_date" formatted="false">%d-%d</string>
+    <string name="toast_repeat_count_more_than_100">The number of conferences cannot be more than 100</string>
+     
+    <string name="toast_conf_account_be_removed">The conference account is not exist, you can not see the history of scheduled meetings</string>
+    
+    <string name="toast_title_not_be_null">Conference Title Is Required</string>
+    <string name="toast_content_not_be_null">Conference Content Is Required</string>
+    
+    <string name="toast_repeat_count_not_be_null">RepeatTimes Is Required</string>
+    
+    <string name="toast_history_early_to_near">By Date↓</string>
+    <string name="toast_history_near_to_early">By Date↑</string>
+    
+    <string name="toast_setting_account_set">Account Setting</string>
+    <string name="toast_setting_passwd_protect">Password Protection</string>
+    <string name="toast_setting_version_statement">Version Statement</string>
+    <string name="toast_setting_about_us">About Us</string>
+    <string name="toast_service_connection">
+        Enquire or apply for conference account,please contact customer service\n
+        CS information:\n
+        Call us at：4000621818(China)\n
+        86 21 60264111(Global)\n
+        Email: css@bizconf.cn</string>
+        
+    <string name="toast_setting_check_update">Check For Updates</string>
+    
+    <string name="toast_service_world_access_number">Global Access Number List</string>
+    
+    <string name="toast_setting_moderator_account">Leader Account</string>
+    <string name="toast_setting_join_account">Participant Account</string>
+    
+    <string name="toast_network_not_ready">Please Open 3G or wifi network!</string>
+	<string name="toast_network_unavailable">Unavailable Network Access, Please Check</string>
+    <string name="toast_network_not_fast">Unavailable network access, Failed to use conference tool</string>
+    
+    <string name="toast_leave_conf">Leave Conference</string>
+    <string name="toast_finish_conf">End Conference</string>
+    
+    <string name="toast_input_new_name">Please Enter New Name</string>
+    <string name="toast_input_name_not_null">Name Is Required</string>
+    
+    <string name="toast_conf_alert_title">Note</string>
+    <string name="toast_enter_inCall_screen">Please enter into the calling interface to get more functions</string>
+    
+    <string name="toast_operate_waitting">Being processed , Please wait &#8230;</string>   
+    <string name="toast_operate_time_out">Timeout , Please try again</string>
+    
+    <string name="toast_loading_contacts">Loading Contacts , Please Wait &#8230;</string>
+     
+    <string name="toast_ok_to_start_conf" formatted="false">Click To Start Conference:%s</string>
+     
+    <string name="toast_del_account_success">Delete Account Successfully!</string>
+    
+    <string name="toast_transfer_moderator">Please select a participant to transfer leader priviledge</string>
+    
+    <string name="toast_fixed_line">Please add area code before fixed telephone</string>    
+     
+    <string name="toast_fixed_line_verify" formatted="false">Fixed line can not less than %d numbers</string>
+    
+    <string name="conf_open_hf">Handsfree</string>
+    <string name="conf_mute_self">Mute Yourself</string>
+    <string name="conf_mute_all">Mute All</string>
+    <string name="conf_call_name">Roll Call</string>
+    <string name="conf_record">Recording</string>
+    <string name="conf_add_participant">Add Participant</string>
+    <string name="conf_lock">LocK</string>
+    <string name="conf_transfer">Phone Transfer</string>
+    <string name="conf_other_function">Other Features</string>
+    <string name="bt_disconnect">Disconnect</string>
+    <string name="bt_mute">Mute</string>
+    <string name="bt_rename">Rename</string>
+    
+    <string name="title_finish">Finish</string>
+    
+    <string name="chooser_title">Please Select Program To Send</string>
+    
+    <string name="conf_no_net_function_toast">Please switch to the call interface, operate with the keyboard</string>
+    
+    <string  name="conf_mute_self_no_net">Because of the unavailable network access, please switch to the phone keypad to use*6</string>
+   	<string name="conf_mute_all_no_net">Because of the unavailable network access, please switch to the phone keypad to use *5</string>
+    <string name="conf_call_name_no_net">Because of the unavailable network access, please switch to the phone keypad to use *4</string>
+    <string name="conf_record_no_net">Because of the unavailable network access, please switch to the phone keypad to use *2</string>
+    <string name="conf_add_participant_no_net">Because of the unavailable network access, please switch to the phone keypad to use *1</string>
+    <string name="conf_lock_no_net">Because of the unavailable network access, please switch to the phone keypad to use *7</string>
+    <string name="conf_transfer_no_net">Because of the unavailable network access, please switch to the phone keypad to use *1</string>
+    <string name="conf_service_no_net">Because of the unavailable network access, please switch to the phone keypad to use 00</string>
+    
+    <string name="beijing_conf_mute_self_no_net">Because of the unavailable network access, please switch to the phone keypad to use *6*</string>
+    <string name="beijing_conf_mute_all_no_net">Because of the unavailable network access, please switch to the phone keypad to use *52*or*51*</string>
+    <string name="beijing_conf_call_name_no_net">Because of the unavailable network access, please switch to the phone keypad to use *74*</string>
+    <string name="beijing_conf_record_no_net">Because of the unavailable network access, please switch to the phone keypad to use *17*</string>
+    <string name="beijing_conf_add_participant_no_net">Because of the unavailable network access, please switch to the phone keypad to use *phone numbers*</string>
+    <string name="beijing_conf_lock_no_net">Because of the unavailable network access, please switch to the phone keypad to use *7*</string>
+    <string name="beijing_conf_transfer_no_net">Because of the unavailable network access, please switch to the phone keypad to use *phone numbers*</string>
+    <string name="beijing_conf_service_no_net">Because of the unavailable network access, please switch to the phone keypad to use *10*</string>
+    
+    <!-- Add Conference -->
+    <string name="noRepeat">No Repeat</string>
+    <string name="everyDay">Everyday</string>
+    <string name="everyWeek">Every Week</string>
+    <string name="everyMonth">Every Month</string>
+    <string name="everyYear">Every Year</string>
+    
+    <string name="week_1">Sun</string>
+    <string name="week_2">Mon</string>
+    <string name="week_3">Tue</string>
+    <string name="week_4">Wed</string>
+    <string name="week_5">Thu</string>
+    <string name="week_6">Fri</string>
+    <string name="week_7">Sat</string>
+    
+    <string name="exception_invalid_account">Invalid account, please check</string>
+
+    <string name="no_email_templet">This account does not have an template information</string>
+        
+    <string name="shanghai_service_command">*0 or 00</string>
+    
+    <string name="beijing_service_command">*10*</string>
+    
+    <string name="shanghai_toast_suffix_of_command">#</string>
+    
+    <string name="beijing_toast_suffix_of_command">,press * key before and after the number</string>
+    
+    <string name="global_access_number_speaker_ch">(Chinese)</string>
+    
+    <string name="global_access_number_speaker_en">(English)</string>
+    
+    <string name="network_connection_failed">Network connection failed, please check</string>
+    
+    <string name="sms_content" formatted="false">
+        %s invite you join BizConf conference\n
+	Call Acess Number:%s\n
+	Input:%s\n
+	Additional Conference Security Code：%s\n
+	Date:%s&#160;&#160;Time:%s&#160;&#160;Topic:%s
+    </string>
+   
+    <string name="email_html_content" formatted="false">
+        
+    <![CDATA[
+    
+    <p>
+	%s
+	</p>
+	
+    <h4><b> %s has invited you to join an BizConf meeting.</b></h4>  
+    
+	<h4>Date:%s  &nbsp;&nbsp; Time:%s(GMT)</h4> 
+	
+	<h4>Topic:%s</h4>
+	
+	<h4><b>Join the conference </b></h4> 
+	
+	<p>
+	To join the meeting from your iPhone, Android phone press:%s
+	</p>
+
+	<h4>Dial into the conference:</h4>
+	
+	<p>1.Dial-In Number</p>
+	
+	<p>
+	-International Direct Dial: <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%s<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%s
+	</p>
+	
+	<p>
+	-Additional Dial-In Number(charge):<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Chinese)%s<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (English)%s<br>
+	</p>
+	
+	<p>
+	-Additional Dial-In Number(free within China):<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Chinese)%s<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(English)%s<br>
+	</p>
+	
+	<p>
+	-View international dial-in numbers: <br>
+	%s
+ 	</p>
+　　　　　　　　　　　　　　　　
+	<p>
+	2.Enter the conference code  %s %s<br>
+	Enter the security code(if it needed) %s and followed by the # 
+	</p>
+
+	<h4><b>Friendly Reminder</b><h4> 
+	
+    <p>
+	1.First user of BizConf Mobile can search &quot;会畅通讯手机助理&quot; app from APP Store or HiMarket, and then download it.
+    </p>
+    
+    <p>
+	2.If you access emails through your computer, you will receive a calendar file as an attachment in the email. 
+	It includes the conference details of the current conference. Open the calendar file and click Save to add 
+	it to your calendar. You will receive a conference reminder before the conference starts.
+    </p>
+    
+    <p>
+	3.If you have any questions ,please press %s to connect our operator for assistance, 
+		or dial 7*24 customer service line 4000621818(within China).
+    </p>
+	]]>
+   </string>
+    
+	<string name="toast_version_statement">
+	<![CDATA[	    
+	<h4>BizConf®Mobile<h4>
+	
+	<p>
+		Version V %s
+   	</p>
+   
+    <p>
+    	BizConf Mobile can schedule, join, start and control your conference from your mobile devices easily
+    </p>	
+    
+    <p>
+		©2006-2014 BizConf Telecom Co.,Ltd.All Right Resolved.
+    </p>	
+   ]]>
+   </string>
+   
+	<string name="toast_about_us"><![CDATA[
+    <p>
+    	&nbsp;&nbsp;&nbsp;&nbsp;BizConf is a globally leading collaboration communication service provider,adhering to the concept of "Comdemunication creates values",dedicated to improving enterprise communication efficiencies and reducing operation costs,and devoted to providing high-quality Audio Conferencing,Web Conferencing,Streaming,Video conferencing and other collaboration communication services.
+    </p>  	
+    
+    <p>
+    <b>Customer support</b><br>
+    	&nbsp;&nbsp;&nbsp;&nbsp;Tel:+86 21 6026 4111<br>
+    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4000621818<br>
+    	&nbsp;&nbsp;&nbsp;&nbsp;E-mail: css@bizconf.cn
+    </p>	
+   ]]>
+   </string>
+   
+   <string name="add_account_advanced">Advanced Settings</string>
+   <string name="passwd_protect_alert">If you turn on the password protection,please enter the password into the application</string>
+   <string name="passwd_protect_input">Enter the password</string>
+   <string name="passwd_protect_confrim">Confirm the password</string>
+   <string name="passwd_protect_button_confrim">OK</string>
+   <string name="passwd_protect_check_confrim">Because you have set up password protection, they need to enter a password</string>
+   <string name="passwd_is_wrong">The password is wrong</string>
+   <string name="passwd_is_not_equal">Two passwords do not match</string>
+   <string name="passwd_protect_set_success">Success</string>
+   <string name="passwd_protect_error_alert">Three times wrong passwd will auto exit</string>
+   <string name="phone_transfer_alert">Enter the number you want to transfer, fixed telephone, dial the area code</string>
+   <string name="divide_phone_transfer_alert">Enter the extension number</string>
+   <string name="rename_input_newName">Rename</string>
+   <string name="ok_then_back">Quit</string>
+   <string name="save_success">success of saving</string>
+   <string name="conf_bt_back">Back to the main menu</string>
+   <string name="conf_bt_leave">Leave conference</string>
+   <string name="conf_bt_finish">Finish conference</string>
+   <string name="conf_bt_cancel">Cancel</string>
+   <string name="cont_not_exist">Contact not exit</string>
+   <string name="cont_not_exist1">Can not find this item,automatically add this in list</string>
+   
+   <string name="location_change_toast">You are in %s,do you want to switch your access number?</string>
+   <string name="location_change_now_you">You are in</string>
+   <string name="location_change_change_code">Do you want to switch your access number</string>
+   <string name="passwd_is_not_null">Password can not be empty</string>	
+   
+   <string name="open_location_service">Open location service, convenient for you to choose the access number</string>   
+   <string name="toast_mute_self_unable">Can not self mute for only one person in meeting!</string>   
+   <string name="toast_add_fixed_phone_num">Landline please dial the area code, extension number separated by -</string> 
+   <string name="toast_outcall_num_invalid">You can only enter numbers and + -</string>
+</resources>

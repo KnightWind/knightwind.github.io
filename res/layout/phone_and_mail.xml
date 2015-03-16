@@ -1,0 +1,18 @@
+
+<LinearLayout 
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/input_single"
+	    android:orientation="vertical"
+	    android:padding="0dp"
+	    >
+	    <ListView
+	        android:id="@+id/phone_and_mail_lv" 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	        >
+	    </ListView>
+
+</LinearLayout>

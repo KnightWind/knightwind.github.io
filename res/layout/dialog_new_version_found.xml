@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/input_single"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/version_update_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" 
+        android:text="@string/toast_latest_version_title"/>
+
+    <TextView
+        android:id="@+id/version_feature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:textColor="#FF525252"
+        android:textSize="14sp" 
+        android:text="@string/toast_version_update_feature"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_ignore_new_version"
+            style="@style/button"
+            android:background="@drawable/selector_home_verify_bt_pass"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+        
+        <Button
+            android:id="@+id/bt_update_version"
+            style="@style/button"
+            android:background="@drawable/selector_app_bt_confirm"
+            android:layout_weight="1"
+            android:text="@string/update" />
+        
+    </LinearLayout>
+
+</LinearLayout>

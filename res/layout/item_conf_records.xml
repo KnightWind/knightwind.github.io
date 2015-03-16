@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_conf_records"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/tv_meeting_name"
+        style="@style/TextBoxBase"
+        android:layout_height="wrap_content"
+        android:text="@string/title_name_of_activity" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_meeting_code"
+        style="@style/TextBoxBase"
+        android:layout_height="wrap_content"
+        android:text="@string/title_name_of_activity" >
+    </TextView>
+
+    <TextView 
+        style="@style/SperatorLine"/>
+</LinearLayout>

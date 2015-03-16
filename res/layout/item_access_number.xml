@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutBase.Horizontal"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/input_single" >
+
+    <TextView
+        android:id="@+id/tv_left_toast"
+        style="@style/TextBoxBase.TextViewWithEt"
+        android:text="@string/access_number" />
+
+    <TextView
+        android:id="@+id/tv_center_content"
+        style="@style/TextBoxBase.EditTextWithTv"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/disclosure_arrow"
+        android:text="@string/none" />
+
+    <EditText
+        android:id="@+id/et_center_content"
+        style="@style/TextBoxBase.EditTextWithTv"
+        android:text="@string/none"
+        android:inputType="phone"
+        android:visibility="gone" />
+
+</LinearLayout>

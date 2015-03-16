@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutBase.Vertical.Content" 
+    android:layout_width="wrap_content"
+    android:background="@drawable/home_conf_add_party_item_bg"
+   	>
+		
+        	
+    <!-- if want it show right, set it -->
+    <!-- android:checkMark="@drawable/selector_checkbox"  -->
+    	<ImageView
+    	    android:id="@+id/ctv_person_head"
+    	    android:layout_marginLeft="5dp"
+    	    android:contentDescription="@string/access_number" 
+    	    android:layout_width="60dp"
+    	    android:layout_height="60dp"
+    	    android:textAlignment="center"
+    	    android:background="#fff"
+    	    />
+	    <CheckedTextView
+	        android:layout_gravity="center"
+	        android:id="@+id/ctv_person_name"
+	        style="@style/TextBoxBase.SingleTexBox" 
+	        android:textAlignment="viewEnd"
+	        android:checked="false"
+	        android:clickable="false"
+	        android:focusable="false"
+	        android:focusableInTouchMode="false"
+	        android:layout_marginTop="1dp"
+	        android:layout_marginBottom="1dp"
+	        android:layout_marginLeft="50dp"
+	        android:drawableLeft="@drawable/selector_checkbox" 
+	        android:drawablePadding="10dp"
+	        android:background="@android:color/transparent"
+	        />
+	  <TextView
+	      	android:visibility="invisible"
+	      	android:id="@+id/ctv_person_arrow"
+	      	android:layout_marginRight="30dp"
+	      	android:layout_gravity="right|center_vertical"
+	        android:layout_width="15dp"
+        	android:layout_height="20dp"
+        	android:drawableLeft="@drawable/disclosure_arrow" 
+        	android:background="@android:color/transparent"
+	        />
+</FrameLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sktlab="http://schemas.android.com/apk/res/com.sktlab.bizconfmobile"
+    style="@style/LayoutBase.Vertical.Content"
+    android:baselineAligned="false" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+         >
+            <LinearLayout
+                android:id="@+id/layout_conf_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                 >
+
+                <include
+                    android:id="@+id/etv_account_name"
+                    layout="@layout/edit_text_with_tv" >
+                </include>
+
+                <include
+                    android:id="@+id/etv_conf_code"
+                    layout="@layout/edit_text_with_tv" >
+                </include>
+
+                <include
+                    android:id="@+id/etv_moderator_pw"
+                    layout="@layout/edit_text_with_tv" >
+                </include>
+
+                <include
+                    android:id="@+id/layout_access_number"
+                    layout="@layout/item_access_number" >
+                </include>
+                
+                <include
+                    android:id="@+id/layout_access_advanced"
+                    layout="@layout/item_access_number" >
+                </include>
+                <Button
+                android:id="@+id/bt_confirm_all"
+                style="@style/TextBoxBase.SingleTexBox.ConfirmBt"               
+                android:text="@string/ok" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_control_moudle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                 >
+
+                <com.sktlab.bizconfmobile.customview.SlipControlView
+                    android:id="@+id/dial_out_module"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    sktlab:inputModuleBg="@drawable/input_bottom"
+                    sktlab:isSlipOn="false"
+                    sktlab:tmBgImHide="@drawable/input_single"
+                    sktlab:tmBgImShow="@drawable/input_top"
+                    sktlab:toastStr="@string/allow_to_outside_call" >
+                </com.sktlab.bizconfmobile.customview.SlipControlView>
+
+                <com.sktlab.bizconfmobile.customview.SlipControlView
+                    android:id="@+id/security_code_module"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    sktlab:inputModuleBg="@drawable/input_bottom"
+                    sktlab:isSlipOn="false"
+                    sktlab:tmBgImHide="@drawable/input_bottom"
+                    sktlab:tmBgImShow="@drawable/input_center"
+                    sktlab:toastStr="@string/conf_security_code" >
+                </com.sktlab.bizconfmobile.customview.SlipControlView>
+                <Button
+                android:id="@+id/bt_confirm_all1"
+                style="@style/TextBoxBase.SingleTexBox.ConfirmBt"               
+                android:text="@string/ok_then_back" />
+            </LinearLayout>
+
+            
+       
+    </FrameLayout>
+
+</LinearLayout>
