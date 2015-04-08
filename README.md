@@ -1,2 +1,2 @@
 # bizconfMobile4Android
-bizconfMobile android app 
+bizconfMobile android app   code
