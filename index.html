@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Mainpage
+title: This is my site
 ---
 <!-- Content
     ================================================== -->
@@ -9,10 +9,10 @@ title: Mainpage
     	<div class="row-fluid">
     		<section class="content">
     		  <h1>Ipsum List</h1>
-          <div class="sub-title">A list of interesting lorem ipsums I found on the web</div>
+          <div class="sub-title">Recent post </div>
     		</section>
     		<ul class="entries">
-    		{% for post in paginator.posts %}
+    		{% for post in site.posts %}
     		  <li>
     		    <a href="{{ post.url }}">
     		        <h3>{{ post.title }}</h3>
