@@ -1,6 +1,10 @@
-typewriter
-==========
+HTML5 Muffin chocchip steps
+============================
 
-A simple and beautiful theme for Jekyll.
+Run bundle install
 
-![Screenshot](https://raw.githubusercontent.com/alixedi/typewriter/master/images/screenshot.png)
+	bundle install
+
+Run jekyll
+
+	jekyll
