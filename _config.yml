@@ -15,14 +15,14 @@ redcarpet:
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : liberize's blog
-tagline: Free as the wind.
+title : Knightwind's blog
+tagline: Fly with my heart.
 author :
-  name : liberize
-  email : liberize@gmail.com
-  github : liberize
-  twitter : liberize
-  feedburner : feedname
+  name : Knightwind
+  email : jameswangdfx@gmail.com
+  github : Knightwind
+  twitter : Knightwind
+  #feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -93,9 +93,9 @@ JB :
   comments :
     provider : duoshuo
     duoshuo :
-      short_name : liberize
+      short_name : knightwind
     disqus :
-      short_name : liberize
+      short_name : knightwind
     livefyre :
       site_id : 123
     intensedebate :
@@ -113,7 +113,7 @@ JB :
   analytics :
     provider : baidu
     baidu :
-      tracking_id : 'a7c01c4b55f06cf1df9cabb9b18a65a3' 
+      tracking_id : 'a43f4810cf0227e91adf5921ffede962' 
     google : 
       tracking_id : 'UA-41189818-1'
     getclicky :
