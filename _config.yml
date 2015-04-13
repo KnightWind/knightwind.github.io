@@ -22,7 +22,7 @@ author :
   email : jameswangdfx@gmail.com
   github : knightwind
   twitter : knightwind
-  feedburner : feedname
+  #feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -33,7 +33,7 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://imggt.com
-cdn_url : http://imggt.com
+#cdn_url : http://imggt.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
