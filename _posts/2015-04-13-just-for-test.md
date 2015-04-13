@@ -12,7 +12,7 @@ tags: ["test"]
 
 ## 一、添加div
 
-在适当的位置添加一个 id 为 `back-top` 的 div，比如可以添加到 default 模板中。
+在适当的位置添加一个  id 为 `back-top` 的 div，比如可以添加到 default 模板中。
 
 ```html
 <div id="back-top">
