@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Jekyll 添加返回顶部按钮"
-keywords: ["Jekyll", "返回顶部"]
-description: "Jekyll 博客添加返回顶部按钮的方式"
-category: "tech"
-tags: ["jekyll"]
+title: "test blog"
+keywords: ["test", "blog"]
+description: "test md"
+category: "other"
+tags: ["test"]
 ---
 {% include JB/setup %}
 
