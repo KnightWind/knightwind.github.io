@@ -373,7 +373,9 @@ public class ComsumeThd implements Runnable {
 
   输入用户名 root 密码 root 可登陆到dubbo admin管理界面
 
-  ![主页面]({{ IMAGE_PATH }}/dubbo/main.png)
+  
+
+  <img src="{{ IMAGE_PATH }}/dubbo/main.png" width="520px;">
 
 
   点击服务治理 > 服务可以查看到发布的服务状态
