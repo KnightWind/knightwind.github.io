@@ -20,13 +20,15 @@ tags: ["dubbo", "zookeeper"]
 
 
  4.准备发布服务
+
+
     4.1 准备提供服务的接口， 具体操作是：
+
 
     a) 新建一个项目 
     b) 新建一个接口，真的只需要定义接口哟 如：
 
-    ```java
-
+```java
       package com.wcb.dubbo.test;
 
       public interface SayHello {
@@ -35,9 +37,12 @@ tags: ["dubbo", "zookeeper"]
         public String sayHello(String name);
       }
 
-    ```
+```
+
 
     c) 将这个项目打成jar包，提供给服务的provider 和 consumer 如果是maven project，则直接在dependency中添加该接口项目
+
+
 
 
     4.2 准备编写service provider 具体操作是：
@@ -46,7 +51,7 @@ tags: ["dubbo", "zookeeper"]
 
         建一个类，实现要提供的服务接口。
 
-        ```java
+```java
 
           package com.wcb.dubbotest.impl;
 
@@ -60,11 +65,11 @@ tags: ["dubbo", "zookeeper"]
             }
 
           }
+```
 
-        ```
         在Spring配置文件中注册服务: applicationContext.xml 文件内容如下：
 
-        ```xml
+```xml
 
           <?xml version="1.0" encoding="UTF-8"?>
         <beans xmlns="http://www.springframework.org/schema/beans" xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
@@ -101,15 +106,17 @@ tags: ["dubbo", "zookeeper"]
          <bean id="helloService" class="com.wcb.dubbotest.impl.MySayHelloImpl" />
          
         </beans>
+```
 
-        ```
+
         将项目部署到tomcat，启动tomcat即可启动服务。
 
         也可以直接在main方法中启动，我的另一个服务将在main方法中启动和管理
 
         定义服务接口IProcessData接口如下：
 
-        ```java
+
+```java
 
           package com.wcb.duboo;
 
@@ -117,15 +124,17 @@ tags: ["dubbo", "zookeeper"]
             
             public String processData(String data);
           }
+```
 
-        ```
+
 
         为了方便起见服务接口定义，provider consumer 全部包括在工程该工程
 
 
         创建服务接口实现类IProcessDataImpl：
 
-        ```java
+
+```java
 
           public class IProcessDataImpl implements IProcessData {
 
@@ -144,13 +153,14 @@ tags: ["dubbo", "zookeeper"]
             }
             
           }
+```
 
-        ```
 
 
       在spring的配置中注册服务：
 
-      ```xml
+
+```xml
 
         <?xml version="1.0" encoding="UTF-8"?>  
 <beans xmlns="http://www.springframework.org/schema/beans"  
@@ -180,11 +190,12 @@ tags: ["dubbo", "zookeeper"]
     <bean id="demoService" class="com.wcb.duboo.IProcessDataImpl" />  
   
 </beans> 
-      ```
+```
 
     可以在main方法中启动服务：
 
-    ```java
+
+```java
 
     public class MyTest {
   
@@ -203,11 +214,13 @@ tags: ["dubbo", "zookeeper"]
     }
 
   }
-    ```
+
+```
+
 
     为了模拟分布式多服务实例，再重新启动一个该服务接口的服务实例，由于默认端口20880在本机已被占用，需要修改dubbo监听端口,在配置中修改：
 
-    ```xml
+```xml
 
       <?xml version="1.0" encoding="UTF-8"?>  
 <beans xmlns="http://www.springframework.org/schema/beans"  
@@ -243,12 +256,14 @@ tags: ["dubbo", "zookeeper"]
     <bean id="demoService" class="com.wcb.duboo.IProcessDataImpl" />  
   
 </beans> 
-    ```
+```
 
 
   启动服务实例：
 
-  ```java
+
+
+```java
 
   public class MyTest4bak {
   
@@ -268,14 +283,14 @@ tags: ["dubbo", "zookeeper"]
 
 }
 
-  ```
+```
 
 5.消费者调用服务例子：
 
   上面定义了两个服务，在编写消费者代码时需要加入服务端接口定义工程的依赖，然后在配置文件中向注册中心申请服务接口：
 
 
-  ```xml
+```xml
 
       <?xml version="1.0" encoding="UTF-8"?>  
   <beans xmlns="http://www.springframework.org/schema/beans"  
@@ -298,13 +313,14 @@ tags: ["dubbo", "zookeeper"]
       <dubbo:reference id="procService" interface="com.wcb.duboo.IProcessData" /> 
   </beans> 
 
+  
   ```
 
   执行服务调用：
 
 
-  ```java
 
+```java
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -339,7 +355,7 @@ public class ComsumeThd implements Runnable {
 
 }
 
-  ```
+```
 
   运行结果如下：
 
