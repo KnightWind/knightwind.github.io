@@ -12,9 +12,12 @@ tags: ["travel", "自驾"]
 今天的计划是到海螺沟，路程大概是300公里左右。在经历了一段艰险的旅程后终于可以享受片刻的惬意和震撼：
 磨西小镇的闲适的午后和贡嘎雪山冰川的惊鸿一瞥：
 
-![海螺沟]({{ IMAGE_PATH }}/ontheroad/hlg.png)
+<img src="{{ IMAGE_PATH }}/ontheroad/hlg.png" width="620px;">
 
-![磨西镇]({{ IMAGE_PATH }}/ontheroad/moxitown.JPG)
+
+
+
+<img src="{{ IMAGE_PATH }}/ontheroad/moxitown.JPG" width="620px;">
 
 累了准备休息，期待明天新的旅程。
 
@@ -27,17 +30,22 @@ tags: ["travel", "自驾"]
 美丽的红石滩以及不远的贡嘎山：
 
 
-![红石滩]({{ IMAGE_PATH }}/ontheroad/hst.JPG)
+<img src="{{ IMAGE_PATH }}/ontheroad/hst.JPG" width="620px;">
 
 
 路过的第一个垭口：
 
-![雅家埂]({{ IMAGE_PATH }}/ontheroad/hst.JPG)
+<img src="{{ IMAGE_PATH }}/ontheroad/yjg.JPG" width="620px;">
+
 
 折多山口:这里的海拔是4298m, 我觉得雪离我如此只近，于是往上再爬了点，第一次摸到了高山积雪，感觉不错。有点反应爬了一段山需要大口的呼吸：
 
 
-![折多山口]({{ IMAGE_PATH }}/ontheroad/zdsk.JPG)
+<img src="{{ IMAGE_PATH }}/ontheroad/zdsk.JPG" width="620px;">
+
+
+
+整理中....待续
 
 
 

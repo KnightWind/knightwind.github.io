@@ -369,7 +369,8 @@ public class ComsumeThd implements Runnable {
   dubbo.registry.address=zookeeper://127.0.0.1:2181
   启动tomcat，如正常启动访问 localhost:port/ 会弹出如下窗口：
 
-  ![登陆]({{ IMAGE_PATH }}/dubbo/login.png)
+
+  <img src="{{ IMAGE_PATH }}/dubbo/login.png" width="520px;">
 
   输入用户名 root 密码 root 可登陆到dubbo admin管理界面
 
@@ -380,17 +381,19 @@ public class ComsumeThd implements Runnable {
 
   点击服务治理 > 服务可以查看到发布的服务状态
 
-![服务]({{ IMAGE_PATH }}/dubbo/services.png)
+
+ <img src="{{ IMAGE_PATH }}/dubbo/services.png" width="520px;">
 
 点击服务名称可以查看该服务的详细状态以及服务的provider，可以看到在同一机器上不同的端口部署了两个provider:
 
-![提供者]({{ IMAGE_PATH }}/dubbo/sps.png)
 
+
+<img src="{{ IMAGE_PATH }}/dubbo/sps.png" width="520px;">
 
 点击应用，可以查看当前的应用状态：
 
-![应用]({{ IMAGE_PATH }}/dubbo/apps.png)
 
+<img src="{{ IMAGE_PATH }}/dubbo/apps.png" width="520px;">
 
 源码下载：
 hello-provider:  http://pan.baidu.com/s/1mg7WwCK
