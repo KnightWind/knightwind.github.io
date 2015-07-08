@@ -19,14 +19,14 @@ tags: ["dubbo", "zookeeper"]
  3.解压zookeeper后复制一份/conf/zoo_sample.cfg配置，命名为zoo.cfg。具体配置项详解可咨询zookeeper官网文档
 
 
- 4.准备发布服务
+4.准备发布服务
 
 
-    4.1 准备提供服务的接口， 具体操作是：
+4.1 准备提供服务的接口， 具体操作是：
 
 
-    a) 新建一个项目 
-    b) 新建一个接口，真的只需要定义接口哟 如：
+a) 新建一个项目 
+b) 新建一个接口，真的只需要定义接口哟 如：
 
 ```java
       package com.wcb.dubbo.test;
@@ -39,17 +39,16 @@ tags: ["dubbo", "zookeeper"]
 
 ```
 
-
-    c) 将这个项目打成jar包，提供给服务的provider 和 consumer 如果是maven project，则直接在dependency中添加该接口项目
-
+c) 将这个项目打成jar包，提供给服务的provider 和 consumer 如果是maven project，则直接在dependency中添加该接口项目
 
 
 
-    4.2 准备编写service provider 具体操作是：
 
-        新建一个项目，导入准备提供服务接口定义项目依赖。
+4.2 准备编写service provider 具体操作是：
 
-        建一个类，实现要提供的服务接口。
+新建一个项目，导入准备提供服务接口定义项目依赖。
+
+建一个类，实现要提供的服务接口。
 
 ```java
 
@@ -67,7 +66,7 @@ tags: ["dubbo", "zookeeper"]
           }
 ```
 
-        在Spring配置文件中注册服务: applicationContext.xml 文件内容如下：
+在Spring配置文件中注册服务: applicationContext.xml 文件内容如下：
 
 ```xml
 
@@ -108,12 +107,11 @@ tags: ["dubbo", "zookeeper"]
         </beans>
 ```
 
+将项目部署到tomcat，启动tomcat即可启动服务。
 
-        将项目部署到tomcat，启动tomcat即可启动服务。
+也可以直接在main方法中启动，我的另一个服务将在main方法中启动和管理
 
-        也可以直接在main方法中启动，我的另一个服务将在main方法中启动和管理
-
-        定义服务接口IProcessData接口如下：
+定义服务接口IProcessData接口如下：
 
 
 ```java
@@ -127,11 +125,10 @@ tags: ["dubbo", "zookeeper"]
 ```
 
 
+为了方便起见服务接口定义，provider consumer 全部包括在工程该工程
 
-        为了方便起见服务接口定义，provider consumer 全部包括在工程该工程
 
-
-        创建服务接口实现类IProcessDataImpl：
+创建服务接口实现类IProcessDataImpl：
 
 
 ```java
@@ -157,7 +154,7 @@ tags: ["dubbo", "zookeeper"]
 
 
 
-      在spring的配置中注册服务：
+在spring的配置中注册服务：
 
 
 ```xml
@@ -192,7 +189,7 @@ tags: ["dubbo", "zookeeper"]
 </beans> 
 ```
 
-    可以在main方法中启动服务：
+可以在main方法中启动服务：
 
 
 ```java
@@ -218,7 +215,7 @@ tags: ["dubbo", "zookeeper"]
 ```
 
 
-    为了模拟分布式多服务实例，再重新启动一个该服务接口的服务实例，由于默认端口20880在本机已被占用，需要修改dubbo监听端口,在配置中修改：
+为了模拟分布式多服务实例，再重新启动一个该服务接口的服务实例，由于默认端口20880在本机已被占用，需要修改dubbo监听端口,在配置中修改：
 
 ```xml
 
@@ -259,7 +256,7 @@ tags: ["dubbo", "zookeeper"]
 ```
 
 
-  启动服务实例：
+启动服务实例：
 
 
 
@@ -287,7 +284,7 @@ tags: ["dubbo", "zookeeper"]
 
 5.消费者调用服务例子：
 
-  上面定义了两个服务，在编写消费者代码时需要加入服务端接口定义工程的依赖，然后在配置文件中向注册中心申请服务接口：
+上面定义了两个服务，在编写消费者代码时需要加入服务端接口定义工程的依赖，然后在配置文件中向注册中心申请服务接口：
 
 
 ```xml
@@ -316,7 +313,7 @@ tags: ["dubbo", "zookeeper"]
   
   ```
 
-  执行服务调用：
+执行服务调用：
 
 
 
@@ -370,19 +367,19 @@ public class ComsumeThd implements Runnable {
   启动tomcat，如正常启动访问 localhost:port/ 会弹出如下窗口：
 
 
-  <img src="{{ IMAGE_PATH }}/dubbo/login.png" width="520px;">
+<img src="{{ IMAGE_PATH }}/dubbo/login.png" width="520px;">
 
-  输入用户名 root 密码 root 可登陆到dubbo admin管理界面
+输入用户名 root 密码 root 可登陆到dubbo admin管理界面
 
   
 
-  <img src="{{ IMAGE_PATH }}/dubbo/main.png" width="520px;">
+<img src="{{ IMAGE_PATH }}/dubbo/main.png" width="520px;">
 
 
-  点击服务治理 > 服务可以查看到发布的服务状态
+点击服务治理 > 服务可以查看到发布的服务状态
 
 
- <img src="{{ IMAGE_PATH }}/dubbo/services.png" width="520px;">
+<img src="{{ IMAGE_PATH }}/dubbo/services.png" width="520px;">
 
 点击服务名称可以查看该服务的详细状态以及服务的provider，可以看到在同一机器上不同的端口部署了两个provider:
 
