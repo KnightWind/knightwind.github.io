@@ -371,7 +371,17 @@ public class ComsumeThd implements Runnable {
 
 点击应用，可以查看当前的应用状态：
 
-![提供者]({{ IMAGE_PATH }}/dubbo/apps.png)
+![应用]({{ IMAGE_PATH }}/dubbo/apps.png)
+
+
+源码下载：
+hello-provider:  http://pan.baidu.com/s/1mg7WwCK
+
+
+test:  http://pan.baidu.com/s/1kTpb6mj
+
+
+
 
 
 
