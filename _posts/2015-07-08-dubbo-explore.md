@@ -395,8 +395,10 @@ public class ComsumeThd implements Runnable {
 源码下载：
 hello-provider:  http://pan.baidu.com/s/1mg7WwCK
 
+pubinterface: http://pan.baidu.com/s/1gdrl8Nx
 
 test:  http://pan.baidu.com/s/1kTpb6mj
+
 
 
 
