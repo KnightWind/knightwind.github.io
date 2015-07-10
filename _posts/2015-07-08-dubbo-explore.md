@@ -402,6 +402,11 @@ test:  http://pan.baidu.com/s/1kTpb6mj
 github地址：git@github.com:KnightWind/dubboTest.git
 
 
+ps:所有项目基于maven构架。
+
+
+ps:一个很扯淡的问题：运行dubbo admin请注意，如果运行系统为Mac 或linux 请复制dubbo.properties到当前用户目录 ~/  在tomcat/webapps/ROOT/WEB-INF中的修改是毫无意义的。读取的是当前用户目录下的配置。
+
 
 
 
