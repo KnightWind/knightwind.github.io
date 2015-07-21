@@ -3,7 +3,7 @@ _theme_packages/*
 _bak/*
 Thumbs.db
 .DS_Store
-
+*.md~
 *.bak
 
 !.gitkeep
