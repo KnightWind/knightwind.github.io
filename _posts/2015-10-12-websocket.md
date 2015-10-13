@@ -9,15 +9,28 @@ tags: ["websocket", "java","html5"]
 {% include JB/setup %}
 
 随着html5的发展，越来越多的浏览器支持HTML5标准， websocket技术越来越广泛的应用于各种场景。
+
+
 在这基于websocket开发了一个简单的聊天室的功能，初步探究了websocket技术的使用，总结一下下websocket的基本使用步骤
 
 
 服务端代码如下:
+
+
 服务端主要用到以下几个注解：
+
+
 @ServerEndpoint 功能主要是将目前的类定义成一个websocket服务器端。和springMVC @Contoller类似
+
+
 onOpen和onClose注解分别于连接建立,关闭时触发调用的方法
+
+
 onMessage方法在服务端接受到消息时触发的方法，需要注意这几个方法的一些可选参数，可以是javax.websocket.Session
+
 如果使用该参数，则会将当前回话Session注入。 如果定义了@PathParam 也可将@PathParam作为一可选参数注入到这几个方法中
+
+
 在实际使用中是极其有用的
 
 ```java
